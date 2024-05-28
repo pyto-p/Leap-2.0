@@ -65,7 +65,7 @@ export default function LandingPage() {
 					<input
 						type="text"
 						id="job-title"
-						className="h-16 p-3 flex-1 text-white bg-tertiary border-b-2 border-secondary focus:outline-none max-sm:w-auto"
+						className="h-16 p-3 flex-1 text-white bg-tertiary border-b-2 border-secondary focus:outline-none max-sm:w-full"
 						placeholder="Job Title, Company, or Keywords"
 					/>
 					<div className="flex-1 flex gap-2 items-center justify-center bg-tertiary w-full">
