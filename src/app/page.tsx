@@ -28,7 +28,7 @@ export default function LandingPage() {
 		<div className="flex flex-col min-h-screen">
 			<section className="flex-grow bg-secondary h-screen flex max-sm:justify-center max-sm:flex-col">
 				<div className="bg-secondary w-1/2 py-40 px-16 flex flex-col gap-y-3.5 max-sm:p-8 max-sm:w-full">
-					<h2 className="font-bold text-5xl bg-secondary text-primary text-justify max-sm:text-3xl max-sm:mt-16">
+					<h2 className="font-bold text-5xl bg-secondary text-primary max-sm:text-3xl max-sm:mt-16">
 						Elevate Your Career: Leap Where Opportunities Take Flight.
 					</h2>
 					<p className="bg-secondary text-white text-justify text-xl mt-2 max-sm:text-lg">
@@ -36,14 +36,14 @@ export default function LandingPage() {
 					</p>
 					<div className="flex gap-8 bg-secondary">
 						<Link
-							href="/auth/"
+							href="/browse"
 							className="w-40 text-xl btn h-16 bg-primary text-white hover:bg-white hover:text-primary max-sm:text-lg"
 						>
 							Browse Job
 						</Link>
 
 						<Link
-							href="/auth/"
+							href="/post"
 							className="w-40 text-xl btn h-16 bg-primary text-white hover:bg-white hover:text-primary max-sm:text-lg"
 						>
 							Post Job
