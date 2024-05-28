@@ -18,7 +18,7 @@ const FeaturedJobCard: React.FC<FeaturedJobCardProps> = ({
   workSetup,
 }) => {
   return (
-    <div className="flex items-center p-5 border border-gray-300 rounded-lg shadow-md">
+    <div className="flex items-center p-5 border border-gray-300 rounded-lg shadow-md w-96 h-48">
       <div className="text-8xl text-primary mr-5">
         <BiUserCircle />
       </div>

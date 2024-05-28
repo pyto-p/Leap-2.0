@@ -16,25 +16,29 @@ export default function AuthLayout({
   return (
     <html lang="en">
       <body className="flex h-screen overflow-hidden">
-        <div className="w-1/2 h-full relative">
+        {/* Banner */}
+        <div className="w-1/2 h-full relative hidden md:block">
           <Image 
             src={loginBanner} 
             alt='login banner'
             className="w-full h-full object-cover"
           />
         </div>
-        <div className='w-1/2 h-full flex flex-col items-center justify-center gap-12'>
+        {/* Content */}
+        <div className='w-full md:w-1/2 h-full flex flex-col items-center justify-center gap-12'>
           <div className='flex flex-col items-center gap-3'>
             <Image
               src={loginLogo}
               alt="login logo"
+              className='w-auto'
             />
             <Image
               src={loginMantra}
               alt="login mantra"
+              className='w-auto'
             />
           </div>
-          <div className="w-1/2 overflow-y-auto p-5">{children}</div>
+          <div className="w-11/12 overflow-y-auto p-5">{children}</div>
         </div>
       </body>
     </html>

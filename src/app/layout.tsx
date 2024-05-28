@@ -28,55 +28,12 @@ export default function RootLayout({
 				<nav className="sticky top-0 bg-primary px-5 z-50">
 					<div className="navbar bg-primary">
 						<div className="navbar-start bg-primary">
-							<div className="dropdown">
-								<div
-									tabIndex={0}
-									role="button"
-									className="btn btn-ghost lg:hidden"
-								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										className="h-5 w-5"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="2"
-											d="M4 6h16M4 12h8m-8 6h16"
-										/>
-									</svg>
-								</div>
-								<ul
-									tabIndex={0}
-									className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-								>
-									<li>
-										<a>Item 1</a>
-									</li>
-									<li>
-										<a>Parent</a>
-										<ul className="p-2">
-											<li>
-												<a>Submenu 1</a>
-											</li>
-											<li>
-												<a>Submenu 2</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a>Item 3</a>
-									</li>
-								</ul>
-							</div>
+							
 							<Link href="/auth">
 								<Image
 									src={logo}
 									alt="logo"
-									className="bg-primary w-auto h-14"
+									className="bg-primary w-auto h-14 max-sw:h-auto"
 								/>
 							</Link>
 						</div>
@@ -84,29 +41,25 @@ export default function RootLayout({
 						<div className="navbar-center hidden lg:flex">
 							<ul className="menu menu-horizontal gap-16 px-1 bg-primary">
 								<li className="bg-primary text-white">
-									<Link href="" className="btn-nav">
+									<Link href="/" className="btn-nav">
 										Home
 									</Link>
 								</li>
 								<li className="bg-primary text-white">
-									<Link href="" className="btn-nav">
+									<Link href="/browse" className="btn-nav">
 										Find Jobs
 									</Link>
 								</li>
 								<li className="bg-primary text-white">
-									<Link href="" className="btn-nav">
+									<Link href="/post" className="btn-nav">
 										Post a Job
 									</Link>
 								</li>
-								<li className="bg-primary text-white">
-									<Link href="" className="btn-nav">
-										About Us
-									</Link>
-								</li>
+								
 							</ul>
 						</div>
 
-						<div className="navbar-end bg-primary">
+						<div className="navbar-end bg-primary max-sm:hidden">
 							<ul className="menu menu-horizontal px-1 bg-primary">
 								<li className="bg-primary text-white flex-row">
 									<details className="bg-primary text-white">
@@ -117,12 +70,12 @@ export default function RootLayout({
 
 										<ul className="p-2 bg-primary text-white">
 											<li className="bg-primary text-white">
-												<Link href="" className="bg-primary text-white">
+												<Link href="/auth/login" className="bg-primary text-white">
 													Log In
 												</Link>
 											</li>
 											<li className="bg-primary text-white">
-												<Link href="" className="bg-primary text-white">
+												<Link href="/auth/signup" className="bg-primary text-white">
 													Sign Up
 												</Link>
 											</li>
@@ -150,13 +103,14 @@ export default function RootLayout({
 								</li>
 							</ul>
 						</div>
+
 					</div>
 				</nav>
 				<main className="flex-grow">
           {children}
         </main>
 				<footer className="h-auto footer pt-10 bg-secondary flex flex-col items-center">
-					<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-20 bg-secondary place-items-center items-start">
+					<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-20 bg-secondary place-items-center items-start max-sm:p-5">
 						<div className="bg-secondary text-primary flex flex-col items-center">
 							<Image src={logo} alt="logo" className="bg-secondary w-auto" />
 							<p className="bg-secondary text-justify text-base text-white">
@@ -210,7 +164,7 @@ export default function RootLayout({
 							</div>
 						</div>
 					</div>
-					<aside className="bg-primary w-full flex flex-col items-center p-10 gap-3">
+					<aside className="bg-primary w-full flex flex-col items-center p-10 gap-3 max-sm:p-5">
             <div className="navbar-center hidden lg:flex">
 							<ul className="menu menu-horizontal gap-16 px-1 bg-primary">
 								<li className="bg-primary text-white">
@@ -228,14 +182,10 @@ export default function RootLayout({
 										Post a Job
 									</Link>
 								</li>
-								<li className="bg-primary text-white">
-									<Link href="" className="btn-nav">
-										About Us
-									</Link>
-								</li>
+							
 							</ul>
 						</div>
-            <p className="bg-primary text-white text-base">
+            <p className="bg-primary text-white text-base max-sm:w-full">
 							Copyright © 2024 - All right reserved by Leap Inc.
 						</p>
 					</aside>

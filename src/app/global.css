@@ -14,7 +14,7 @@
 }
 
 .btn-auth {
-  @apply btn text-primary border-2 border-primary bg-white btn-xs font-bold sm:btn-sm md:btn-md lg:btn-lg btn btn-block btn-xs sm:btn-sm md:btn-md lg:btn-lg hover:bg-primary hover:text-white
+  @apply btn text-primary border-2 border-primary bg-white btn-lg max-md:btn-md font-bold hover:bg-primary hover:text-white
 }
 
 .input-forms {

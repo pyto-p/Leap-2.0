@@ -33,7 +33,7 @@ export default function LogInPage() {
 					/>
 				</div>
 				<Link
-					href="/auth/"
+					href="/"
 					className="btn-auth"
 				>
 					Log In
