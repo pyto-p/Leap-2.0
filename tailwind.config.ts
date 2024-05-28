@@ -1,6 +1,7 @@
 import daisyui from "daisyui";
 import type { Config } from "tailwindcss";
 
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,14 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      }, 
       colors: {
         'primary': '#283F3B',
-        'secondary': '#659B5E'
+        'secondary': '#659B5E',
+        'tertiary': '#1e2f2c',
       }
     },
   },

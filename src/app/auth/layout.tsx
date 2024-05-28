@@ -8,7 +8,7 @@ export const metadata = {
   description: 'Log In and Sign Up page for Leap',
 }
 
-export default function RootLayout({
+export default function AuthLayout({
   children,
 }: {
   children: React.ReactNode

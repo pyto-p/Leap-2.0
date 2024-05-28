@@ -24,8 +24,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={poppins.variable}>
-			<body className="h-screen poppins">
-				<nav className="sticky top-0 bg-primary px-5">
+			<body className="flex flex-col min-h-screen poppins">
+				<nav className="sticky top-0 bg-primary px-5 z-50">
 					<div className="navbar bg-primary">
 						<div className="navbar-start bg-primary">
 							<div className="dropdown">
@@ -152,7 +152,9 @@ export default function RootLayout({
 						</div>
 					</div>
 				</nav>
-				{children}
+				<main className="flex-grow">
+          {children}
+        </main>
 				<footer className="h-auto footer pt-10 bg-secondary flex flex-col items-center">
 					<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-20 bg-secondary place-items-center items-start">
 						<div className="bg-secondary text-primary flex flex-col items-center">
@@ -208,10 +210,7 @@ export default function RootLayout({
 							</div>
 						</div>
 					</div>
-					<aside className="bg-primary w-full flex flex-col items-center p-10">
-						<p className="bg-primary text-white text-base">
-							Copyright © 2024 - All right reserved by Leap Inc.
-						</p>
+					<aside className="bg-primary w-full flex flex-col items-center p-10 gap-3">
             <div className="navbar-center hidden lg:flex">
 							<ul className="menu menu-horizontal gap-16 px-1 bg-primary">
 								<li className="bg-primary text-white">
@@ -236,6 +235,9 @@ export default function RootLayout({
 								</li>
 							</ul>
 						</div>
+            <p className="bg-primary text-white text-base">
+							Copyright © 2024 - All right reserved by Leap Inc.
+						</p>
 					</aside>
 				</footer>
 			</body>
