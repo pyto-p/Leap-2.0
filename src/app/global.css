@@ -6,10 +6,18 @@
   background-color: white;
 }
 
+.poppins {
+  font-family: var(--font-poppins);
+}
+
 .btn-auth {
   @apply btn text-primary border-2 border-primary bg-white btn-xs font-bold sm:btn-sm md:btn-md lg:btn-lg btn btn-block btn-xs sm:btn-sm md:btn-md lg:btn-lg hover:bg-primary hover:text-white
 }
 
 .input-forms {
   @apply w-full px-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary
+}
+
+.btn-nav {
+  @apply bg-primary focus:font-bold focus:text-white text-base 
 }
